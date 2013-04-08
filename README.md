@@ -4,6 +4,8 @@ By Giles Van Gruisen
 
 ***
 
+## Breaking into Backbone
+
 Welcome to my rendition/solution of the Fetchnotes code challenge! (and my first real experiment with Backbones)
 
 I've forked the popular [todomvc][https://github.com/addyosmani/todomvc] repository as a starting point. For the purposes of this challenge, I chose to go with the Backbones architecture. I've been wanting to get into Backbones for a while, and since Fetchnotes uses Backbones, I thought, "why not?"
