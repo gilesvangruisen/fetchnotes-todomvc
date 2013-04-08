@@ -8,7 +8,7 @@ By Giles Van Gruisen
 
 Welcome to my rendition/solution of the Fetchnotes code challenge! (and my first real experiment with Backbones)
 
-I've forked the popular [todomvc][https://github.com/addyosmani/todomvc] repository as a starting point. For the purposes of this challenge, I chose to go with the Backbones architecture. I've been wanting to get into Backbones for a while, and since Fetchnotes uses Backbones, I thought, "why not?"
+I've forked the popular [todomvc](https://github.com/addyosmani/todomvc) repository as a starting point. For the purposes of this challenge, I chose to go with the Backbones architecture. I've been wanting to get into Backbones for a while, and since Fetchnotes uses Backbones, I thought, "why not?"
 
 ## Bugs, issues, comments
 Because this is not production code per se, I haven't gone through the effort of testing and debugging across different browsers. Of course if this code were intended for production, I would have taken the time to do so.
