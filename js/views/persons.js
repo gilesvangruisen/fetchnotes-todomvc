@@ -8,7 +8,8 @@ var app = app || {};
 		template: _.template($('#person-template').html()),
 
 		events: {
-			'click .delete': 'clear'
+			// Deleting a person- used in dev, left out in prod.
+			// 'click .delete': 'clear'
 		},
 
 		initialize: function () {
@@ -21,9 +22,10 @@ var app = app || {};
 			return this;
 		},
 
-		clear: function () {
-			this.model.destroy();
-		}
+		// Deleting a person- used in dev, left out in prod.
+		// clear: function () {
+		// 	this.model.destroy();
+		// }
 
 	});
 

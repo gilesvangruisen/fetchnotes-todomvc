@@ -17,6 +17,10 @@ There's a bug where the Filter events (standard with todomvc) are triggered when
 
 You might notice that both collections (todos, persons) are in the same file. When I separated them, the app stopped working and threw an error, "Uncaught TypeError: Cannot read property '_listenerId' of undefined." This is something I'm working to understand and fix.
 
-This is my first time getting down and dirty with Backbones (I probably could have phrased that better.) so the code isn't exactly very clean or thorouhgly refactored. E.g. I left in a bunch of console logs that I used during development. I'm going to continue experimenting with Backbones to get a better understanding of the framework and its nuances.
+This is my first time getting down and dirty with Backbones (I probably could have phrased that better.) so the code isn't exactly very clean or thorouhgly refactored. E.g. I left in a bunch of console logs and comments that I used during development. 
 
-## Thanks for you time!
+***
+
+I'm going to continue experimenting with Backbones to get a better understanding of the framework and its nuances.
+
+# Thanks for you time!

@@ -24,6 +24,7 @@ var app = app || {};
 			});
 		},
 
+		// Set the person of this todo item
 		setPerson: function(newPerson) {
 			this.save({
 				person: newPerson

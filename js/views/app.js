@@ -40,11 +40,13 @@ var app = app || {};
 			this.listenTo(app.Todos, 'filter', this.filterAll);
 			this.listenTo(app.Todos, 'all', this.render);
 
+			// Listen for any change to Todos to fix Persons lists (when they break on Person change)
 			this.listenTo(app.Todos, 'change', this.refreshPeople);
 			this.listenTo(app.Persons, 'add', this.addPerson);
 
-			app.Todos.fetch({success:function(data) {console.log(data)}});
-			app.Persons.fetch({success:function(data) {console.log(data)}});
+			app.Todos.fetch();
+			// Populate Persons list
+			app.Persons.fetch();
 		},
 
 		// Re-rendering the App just means refreshing the statistics -- the rest
@@ -80,12 +82,12 @@ var app = app || {};
 			var view = new app.TodoView({ model: todo });
 			$('#todo-list').append(view.render().el);
 		},
-
+		// Populate list with Person (one)
 		addPerson: function(person) {
 			var view = new app.PersonView({ model: person });
 			$('ul.people li.newperson').before(view.render().el);
 		},
-
+		// Refresh Persons Lists (iterate, calling addPerson)
 		refreshPeople: function() {
 			this.$('ul.people').html('<li><a class="person">Me</a></li><li class="newperson"><input class="new-person" placeholder="Someone else?"></li>');
 			app.Persons.each(this.addPerson, this);
@@ -125,10 +127,10 @@ var app = app || {};
 			app.Todos.create(this.newAttributes());
 			this.$input.val('');
 		},
+		// Add a new Person to the lists upon hitting return in the "Someone else?" input
 		personOnEnter: function (e) {
-			console.log(e);
+			// Ensure taking value of proper input
 			var parent = $(e.currentTarget).parents('ul.people');
-
 			var person = $('.new-person', parent).val().trim();
 
 			if(e.which === 13 && person) {

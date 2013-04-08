@@ -45,15 +45,15 @@ var app = app || {};
 
 	// Create our global collection of **Todos**.
 	app.Todos = new TodoList();
+
+	// Collection of "Persons"
 	var PersonList = Backbone.Collection.extend({
 
 		model: app.Person,
 		localStorage: new Backbone.LocalStorage('persons-backbone'),
 
-		all: function () {
-			return this.get('name');
-		}
 	});
 
+	// Create global collection of "Persons"
 	app.Persons = new PersonList();
 })();
