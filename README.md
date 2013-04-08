@@ -4,11 +4,11 @@ By Giles Van Gruisen
 
 ***
 
-## Breaking into Backbone
+## Breaking into Backbone.js
 
 Welcome to my rendition/solution of the Fetchnotes code challenge! (and my first real experiment with Backbone.js)
 
-I've forked the popular [todomvc](https://github.com/addyosmani/todomvc) repository as a starting point. For the purposes of this challenge, I chose to go with the Backbone architecture. I've been wanting to get into Backbone for a while, and since Fetchnotes uses Backbone, I thought, "why not?"
+I've forked the popular [todomvc](https://github.com/addyosmani/todomvc) repository as a starting point. For the purposes of this challenge, I chose to go with the Backbone.js architecture. I've been wanting to get into Backbone.js for a while, and since Fetchnotes uses Backbone.js, I thought, "why not?"
 
 ## Bugs, issues, comments
 Because this is not production code per se, I haven't gone through the effort of testing and debugging across different browsers. Of course if this code were intended for production, I would have taken the time to do so.
@@ -17,10 +17,10 @@ There's a bug where the Filter events (standard with todomvc) are triggered when
 
 You might notice that both collections (todos, persons) are in the same file. When I separated them, the app stopped working and threw an error, "Uncaught TypeError: Cannot read property '_listenerId' of undefined." This is something I'm working to understand and fix.
 
-This is my first time getting down and dirty with Backbone (I probably could have phrased that better.) so the code isn't exactly very clean or thorouhgly refactored. E.g. I left in a bunch of console logs and comments that I used during development. 
+This is my first time getting down and dirty with Backbone.js (I probably could have phrased that better.) so the code isn't exactly very clean or thorouhgly refactored. E.g. I left in a bunch of console logs and comments that I used during development. 
 
 ***
 
-I'm going to continue experimenting with Backbone to get a better understanding of the framework and its nuances.
+I'm going to continue experimenting with Backbone.js to get a better understanding of the framework and its nuances.
 
 # Thanks for you time!
